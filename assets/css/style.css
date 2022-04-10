@@ -120,7 +120,7 @@ body {
     background-color: none;
     display: flex;
     justify-content: center;
-    margin-top: 70%;
+    margin-top: 65%;
 }
 
 h1 {
@@ -146,14 +146,15 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 .title {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 2%;
     border-radius: 20%;
     background-color: darkred;
     

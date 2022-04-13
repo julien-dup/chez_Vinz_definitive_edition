@@ -457,12 +457,21 @@ span {
 /* CARD MODAL */
 
 .cardModal {
-    width: 90%;
+    width: 1%;
     height: 500px;
     background: var(--main-card-color);
     margin-top: 2%;
     border-radius: 10%;
     border: solid 7px #DC8718;
+    animation: biggerCard 0.5s both ;
+}
+
+@keyframes biggerCard {
+    0%{
+    }
+    100% {
+        width: 90%;
+    }
 }
 
 .cardModal::after {

@@ -29,8 +29,10 @@ function toggleMenu() {
             console.log(intElemScrollDown)
             if (intElemScrollDown > 250) {
                 document.querySelector(".show_nav .navbar_links" ).style.top = "10%"
+                document.querySelector(".show_nav .navbar_links" ).style.height = "calc(100vh - 10%)"
             } else {
-                document.querySelector(".show_nav .navbar_links").style.top = "30%" 
+                document.querySelector(".show_nav .navbar_links").style.top = "30%"
+                document.querySelector(".show_nav .navbar_links" ).style.height = "calc(100vh - 30%)" 
             }
         })
     })

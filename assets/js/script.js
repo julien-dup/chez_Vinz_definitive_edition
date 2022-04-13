@@ -24,6 +24,15 @@ function toggleMenu() {
     burger.addEventListener("click", () => {
         navbar.classList.toggle("show_nav")
         burger.classList.toggle("show_nav")
+        document.addEventListener("scroll", function() {    
+            var intElemScrollDown = document.body.scrollTop || document.documentElement.scrollTop;
+            console.log(intElemScrollDown)
+            if (intElemScrollDown > 250) {
+                document.querySelector(".show_nav .navbar_links" ).style.top = "10%"
+            } else {
+                document.querySelector(".show_nav .navbar_links").style.top = "30%" 
+            }
+        })
     })
 }
 
@@ -71,3 +80,23 @@ fifth.addEventListener("click", function(){
     burger.classList.toggle("show_nav")
     document.getElementById("Notre_histoire").scrollIntoView({behavior: 'smooth' , block: "start"})
 })
+
+
+/* HEADER EFFECT */
+
+document.addEventListener("scroll", function() {    
+var intElemScrollDown = document.body.scrollTop || document.documentElement.scrollTop;
+console.log(intElemScrollDown)
+if (intElemScrollDown > 250) {
+    console.log("ok")
+    document.getElementById("header").style.height = "10%" 
+    document.getElementById("logo").style.width = "30%"   
+    document.getElementById("header").style.justifyContent = "space-around"
+  
+    } else {
+        document.getElementById("header").style.height = "30%"  
+        document.getElementById("logo").style.width = "70%"   
+        document.getElementById("header").style.justifyContent = "none"
+    }
+})
+
